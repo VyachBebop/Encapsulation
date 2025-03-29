@@ -5,7 +5,7 @@ public class ChildBankAccount {
     private final double maxBalance;
 
     ChildBankAccount(int maxBalance) {
-        this.maxBalance = maxBalance;
+        this.maxBalance = (maxBalance >= 0) ? maxBalance : 0;
     }
 
     public double getBalance() {
@@ -37,7 +37,6 @@ public class ChildBankAccount {
             return true;
         }
     }
-
 
 
 }
