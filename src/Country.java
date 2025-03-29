@@ -9,14 +9,6 @@ public class Country {
         this.name = name;
     }
 
-    public void printCountry(Country name) {
-        System.out.println("Name: " + this.name);
-        System.out.println("Number of people: " + this.countPeople);
-        System.out.println("Square: " + String.format("%.0f", this.square));
-        System.out.println("Capital: " + this.capital);
-        System.out.println("Sea Exit: " + this.seaExit);
-    }
-
     public int getCountPeople() {
         return countPeople;
     }
@@ -48,4 +40,14 @@ public class Country {
     public void setSeaExit(boolean seaExit) {
         this.seaExit = seaExit;
     }
+
+    public void printCountry(Country name) {
+        System.out.println("Name: " + this.name);
+        System.out.println("Number of people: " + this.countPeople);
+        System.out.println("Square: " + String.format("%.0f", this.square));
+        System.out.println("Capital: " + this.capital);
+        System.out.println("Sea Exit: " + this.seaExit);
+    }
+
+
 }

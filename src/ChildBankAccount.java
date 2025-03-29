@@ -8,6 +8,10 @@ public class ChildBankAccount {
         this.maxBalance = maxBalance;
     }
 
+    public double getBalance() {
+        return balance;
+    }
+
     public boolean depositMoney(double value) { // Пополнение счёта
         if (value < 0) {
             System.out.println("Ошибка: сумма пополнения должна быть больше чем 0");
@@ -34,8 +38,6 @@ public class ChildBankAccount {
         }
     }
 
-    public double getBalance() {
-        return balance;
-    }
+
 
 }
